@@ -257,3 +257,7 @@ Codis是一个豌豆荚团队开源的使用Go语言编写的Redis Proxy使用�
 ![img](https:////upload-images.jianshu.io/upload_images/4720632-3659cd151ffaf7db..png?imageMogr2/auto-orient/strip|imageView2/2/w/498/format/webp)
 
 codis方案推出的时间比较长，而且国内很多互联网公司都已经使用了该集群方案，所以该方案还是比较适合大型互联网系统使用的，毕竟成功案例比较多，但是codis因为要实现slot切片，所以修改了redis-server的源码，对于后续的更新升级也会存在一定的隐患。，但是codis的稳定性和高可用确实是目前做的最好的，只要有足够多的机器能够做到非常好的高可用缓存系统。
+
+# 集群原理详解
+
+https://www.cnblogs.com/kismetv/p/9853040.html
