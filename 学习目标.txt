@@ -1,0 +1,5 @@
+G1
+https://tech.meituan.com/2016/09/23/g1.html
+
+动态代理原理：
+https://www.cnblogs.com/gonjan-blog/p/6685611.html
