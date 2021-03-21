@@ -218,4 +218,4 @@ Netty 中的零拷贝体现在以下几个方面：
 2. 通过wrap操作实现零拷贝。通过 `Unpooled.wrappedBuffer` 方法来将 bytes 包装成为一个 UnpooledHeapByteBuf 对象, 而在包装的过程中, 是不会有拷贝操作的. 即最后我们生成的生成的 ByteBuf 对象是和 bytes 数组共用了同一个存储空间, 对 bytes 的修改也会反映到 ByteBuf 对象中.
 3. ByteBuf 支持 **slice** 操作, 因此可以将 ByteBuf 分解为多个共享同一个存储区域的 ByteBuf, 避免了内存的拷贝。
 4. Java NIO 的 `FileChannel` 实现零拷贝, 可以直接将源文件的内容直接拷贝(`transferTo`) 到目的文件中, 而不需要额外借助一个临时 buffer, 避免了不必要的内存操作
-   Netty第一步是通过 `RandomAccessFile` 打开一个文件, 然后 Netty 使用了 `DefaultFileRegion` 来封装一个 `FileChannel`.当有了 FileRegion 后, 我们就可以直接通过它将文件的内容直接写入 Channel 中, 而不需要像传统的做法: 拷贝文件内容到临时 buffer, 然后再将 buffer 写入 Channel.
+   Netty第一步是通过 `RandomAccessFile` 打开一个文件, 然后 Netty 使用了 `DefaultFileRegion` 来封装一个 `FileChannel`.当有了 FileRegion 后, 我们就可以直接通过它将文件的内容直接写入 Channel 中, 而不需要像传统的做法: 拷贝文件内容到临时 buffer, 然后再将 buffer 写入 Channel.                                   
