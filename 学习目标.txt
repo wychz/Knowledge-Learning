@@ -1,5 +1,17 @@
 G1
 https://tech.meituan.com/2016/09/23/g1.html
+https://nanyao.blog.csdn.net/article/details/80513383?dist_request_id=1328740.10829.16168123136915079&depth_1-
+https://blog.csdn.net/u022812849/article/details/107692963
+https://zhuanlan.zhihu.com/p/52841787?from_voters_page=true
+
 
 动态代理原理：
 https://www.cnblogs.com/gonjan-blog/p/6685611.html
+
+条件变量
+
+场景题
+一致性哈希
+
+NAT协议
+https://blog.csdn.net/gui951753/article/details/79593307
