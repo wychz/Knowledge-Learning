@@ -533,7 +533,7 @@ explain select code  from test1 where code='001';
 
 上图中使用了联合索引：idx_code_name，如果索引全匹配key_len应该是183，但实际上却是92，这就说明没有使用所有的索引，索引使用不充分。
 
-ref列 
+### ref列 
 
 该列表示索引命中的列或者常量。
 
@@ -549,7 +549,7 @@ explain select *  from test1 t1 inner join test1 t2 on t1.id=t2.id where t1.code
 
 我们看到表t1命中的索引是const(常量)，而t2命中的索引是列sue库的t1表的id字段。
 
-rows列 
+### rows列 
 
 该列表示MySQL认为执行查询必须检查的行数。
 
@@ -557,7 +557,7 @@ rows列
 
 对于InnoDB表，此数字是估计值，可能并不总是准确的。
 
-filtered列
+### filtered列
 
 该列表示按表条件过滤的表行的估计百分比。最大值为100，这表示未过滤行。值从100减小表示过滤量增加。
 
@@ -565,7 +565,7 @@ filtered列
 
 rows显示了检查的估计行数，rows× filtered显示了与下表连接的行数。例如，如果 rows为1000且 filtered为50.00（50％），则与下表连接的行数为1000×50％= 500。
 
-Extra列
+### Extra列
 
 该字段包含有关MySQL如何解析查询的其他信息，这列还是挺重要的，但是里面包含的值太多，就不一一介绍了，只列举几个常见的。
 
