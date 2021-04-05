@@ -15,3 +15,21 @@ https://www.cnblogs.com/gonjan-blog/p/6685611.html
 
 NAT协议
 https://blog.csdn.net/gui951753/article/details/79593307
+
+
+故障定位 ***
+
+
+TCP可靠性的实现。
+路由选择算法
+TCP的顺序性
+concurrentHahsMap
+HashMap
+中断机制
+JDK8新特性
+
+
+awk
+https://www.zsythink.net/archives/2046
+https://www.cnblogs.com/ftl1012/p/9250541.html
+https://www.cnblogs.com/ginvip/p/6352157.html
